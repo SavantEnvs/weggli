@@ -1,0 +1,10 @@
+project: savantenvs/weggli
+target: fuzz-query-buggy-mhh-run-5
+
+# origin: https://app.mayhem.security/mayhemheroes/weggli/fuzz-query/5
+
+cmds:
+  - cmd: /mayhem/fuzz_query
+    libfuzzer: true
+  - cmd: /mayhem/fuzz_query @@
+    libfuzzer: false
